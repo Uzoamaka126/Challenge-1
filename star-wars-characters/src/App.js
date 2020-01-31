@@ -4,11 +4,11 @@ import "./App.css";
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
-  const filteredCharacters = characters.filter(character => character.name);
+  // const filteredCharacters = characters.filter(character => character.name);
 
   useEffect(() => {
-    async function fetchData() {
-      const response = await fetch("https://swapi.co/api/people/1");
+    const fetchData = async () => {
+      const response = await fetch("https://swapi.co/api/people");
       const data = await response.json();
       const profile = data.results;
       setCharacters(profile);
@@ -18,7 +18,13 @@ const App = () => {
 
   return (
     <div>
-      <p>{filteredCharacters}</p>
+      {characters.map(character => (
+        <div>
+          <h2 key={8 + Math.random()}>{character.name}</h2>
+          <p>{character.gender}</p>
+          <p>{character.height}</p>
+        </div>
+      ))}
     </div>
   );
 };
