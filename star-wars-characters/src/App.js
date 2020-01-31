@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./App.css";
+import CardList from "./components/card-list/CardList";
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
@@ -18,13 +19,7 @@ const App = () => {
 
   return (
     <div>
-      {characters.map(character => (
-        <div>
-          <h2 key={8 + Math.random()}>{character.name}</h2>
-          <p>{character.gender}</p>
-          <p>{character.height}</p>
-        </div>
-      ))}
+      <CardList characters={characters}/>
     </div>
   );
 };
