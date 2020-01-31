@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
 
-function App() {
+import "./App.css";
+
+const App = () => {
+  const [characters, setCharacters] = useState([]);
+  const filteredCharacters = characters.filter(character => character.name);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch("https://swapi.co/api/people/1");
+      const data = await response.json();
+      const profile = data.results;
+      setCharacters(profile);
+    }
+    fetchData();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>{filteredCharacters}</p>
     </div>
   );
-}
+};
 
 export default App;
