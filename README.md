@@ -23,10 +23,10 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-    * React JS is a JS library that allows for a declarative approach to building web applications.
-    It 
+    * **React JS is a JS UI library that allows for a declarative approach to building web applications.
+    It takes care of applying changes to the DOM, based on the codebase, in the most efficient manner by using a virtual DOM. This aims to improve the performance of web applications, as opposed to manipulating the DOM directly.**
 - [ ] What does it mean to _think_ in react?
-
+    * **To think in React, building applications will require an understanding of how parts of the application interact with one another. An application will have to be broken down into individual parts called components, that also have the added benefit of being reusable.**
 - [ ] Describe state.
 
 - [ ] Describe props.
