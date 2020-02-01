@@ -28,7 +28,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] What does it mean to _think_ in react?
     * **To think in React, building applications will require an understanding of how parts of the application interact with one another. An application will have to be broken down into individual parts called components, that also have the added benefit of being reusable.**
 - [ ] Describe state.
-
+    * **State is a JS object that stores property values that control the behaviour of a component. It usually changes over time.**
 - [ ] Describe props.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
