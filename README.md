@@ -30,7 +30,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] Describe state.
     * **State is a JS object that stores property values that control the behaviour of a component. It usually changes over time.**
 - [ ] Describe props.
-
+    * **Props are JS objects containing property values, that are passed down to components from the state. They usually do not control the behaviour of the component.**
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
 ## Project Set Up
