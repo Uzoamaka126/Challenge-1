@@ -32,6 +32,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] Describe props.
     * **Props are JS objects containing property values, that are passed down to components from the state. They usually do not control the behaviour of the component.**
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+    * **Side effects are results that affect something outside the scope of a function being executed, such as data fetching from an external API - causing logs to be recorded, caches saved with other effects that are outside the functions executing the action.**
 
 ## Project Set Up
 
