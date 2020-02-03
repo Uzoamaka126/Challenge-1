@@ -5,7 +5,7 @@ import CardList from "./components/card-list/CardList";
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
-  // const filteredCharacters = characters.filter(character => character.name);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -13,6 +13,7 @@ const App = () => {
       const data = await response.json();
       const profile = data.results;
       setCharacters(profile);
+      setLoading(false);
     }
     fetchData();
   }, []);
@@ -20,7 +21,7 @@ const App = () => {
   return (
     <div>
       <h1>Star Wars Characters</h1>
-      <CardList characters={characters}/>
+      {loading ? ...loading : <CardList characters={characters} />}
     </div>
   );
 };

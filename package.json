@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "gh-pages": "^2.2.0",
     "styled-components": "^5.0.0"
   }
 }
